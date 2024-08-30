@@ -1,0 +1,17 @@
+<div class="w-full h-screen flex flex-col overflow-hidden">
+  <!-- Header -->
+  <app-header/>
+
+  <div class="flex-1 flex p-0 w-full overflow-hidden">
+      <app-sidebar/>
+
+      <!-- Main content area -->
+      <div class="flex-1 flex w-full m-4 bg-gray-100 overflow-hidden">
+          <!-- Contenedor principal con scroll y margen de 1rem -->
+          <div class="flex-1 overflow-y-auto mb-4">
+              <router-outlet/>
+          </div>
+      </div>
+  </div>
+</div>
+
